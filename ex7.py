@@ -37,5 +37,5 @@ for l in range(len(matriz)):
        linha.append(matriz[c][l])
     matriz_transposta[l] = linha
 
-print('Matriz 3 - Subtração: ')
+print('Matriz 3 - Transposta: ')
 mostra_matriz(matriz_transposta)
