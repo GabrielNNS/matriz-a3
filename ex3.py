@@ -13,15 +13,15 @@ matriz = [linhas] * n
 matriz_diagonal = [linhas] * n
 
 def preenche_matriz(matriz):
-    for l in range(n):
+    for l in range(len(matriz)):
         linha = []
-        for c in range(m):
+        for c in range(len(matriz[l])):
             numero = int(input(f"Numero ({l},{c}): "))
             linha.append(numero)
         matriz[l] = linha
 
 def mostra_matriz(matriz):
-    for i in range(0 , n):
+    for i in range(len(matriz)):
         print(matriz[i])  
 
 print('Matriz: ')

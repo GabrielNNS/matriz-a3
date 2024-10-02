@@ -12,7 +12,7 @@ linhas = [0] * m
 matriz = [linhas] * n
 
 def mostra_matriz(matriz):
-    for i in range(0 , n):
+    for i in range(len(matriz)):
         print(matriz[i])  
 
 ## Define a diagonal em 1 e o restante em 0

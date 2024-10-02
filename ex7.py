@@ -15,25 +15,25 @@ matriz = [linhas] * n
 matriz_transposta = [linhas] * n
 
 def preenche_matriz(matriz):
-    for l in range(n):
+    for l in range(len(matriz)):
         linha = []
-        for c in range(m):
+        for c in range(len(matriz[l])):
             numero = int(input(f"Numero ({l},{c}): "))
             linha.append(numero)
         matriz[l] = linha
 
 def mostra_matriz(matriz):
-    for i in range(0 , n):
-        print(matriz[i])  
+    for i in range(len(matriz)):
+        print(matriz[i]) 
 
 preenche_matriz(matriz)
 print('Matriz: ')
 mostra_matriz(matriz) 
 
 ## Transposta
-for l in range(n):
+for l in range(len(matriz)):
     linha = []
-    for c in range(m):
+    for c in range(len(matriz[l])):
        linha.append(matriz[c][l])
     matriz_transposta[l] = linha
 
